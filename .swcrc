@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json.schemastore.org/swcrc",
+    "exclude": [
+        "node_modules",
+        "dist",
+        ".eslintrc.js",
+        "prettier.config.js"
+    ],
+    "jsc": {
+        "baseUrl": "./",
+        "target": "es5",
+        "parser": {
+            "syntax": "typescript",
+            "decorators": true,
+            "dynamicImport": false
+        },
+        "transform": {
+            "legacyDecorator": true,
+            "decoratorMetadata": true
+        },
+        "externalHelpers": false,
+        "paths": {
+            "@src/": [
+                "./src/"
+            ]
+        }
+    },
+    "sourceMaps": false,
+    "module": {
+        "type": "commonjs"
+    }
+}
