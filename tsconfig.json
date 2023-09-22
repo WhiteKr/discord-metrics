@@ -1,22 +1,22 @@
 {
   "extends": "./tsconfig.path.json",
   "compilerOptions": {
-     "lib": [
-        "ES5",
-        "ES6",
-        "DOM"
-     ],
-     "target": "ES5",
-     "module": "CommonJS",
-     "moduleResolution": "Node",
-     "outDir": "./dist",
-     "emitDecoratorMetadata": true,
-     "experimentalDecorators": true,
-     "sourceMap": true,
-     "forceConsistentCasingInFileNames": true,
-     "resolveJsonModule": true,
-     "esModuleInterop": true,
-     "strict": true,
-     "skipLibCheck": true
+    "lib": [
+      "ES5",
+      "ES6",
+      "DOM"
+    ],
+    "target": "ES5",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "./dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true
   }
 }

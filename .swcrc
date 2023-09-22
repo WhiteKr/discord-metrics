@@ -20,8 +20,8 @@
         },
         "externalHelpers": false,
         "paths": {
-            "@src/": [
-                "./src/"
+            "@src/*": [
+                "./src/*"
             ]
         }
     },
