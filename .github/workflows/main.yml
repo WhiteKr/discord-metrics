@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [main] # !!!! master 사용시 master로 변경필요 !!!!
+    branches: [main]
 
 env:
   DOCKER_NAME: metrics
@@ -33,4 +33,4 @@ jobs:
 
       # buildx 명령어로 amd64, arm64, arm/v6, arm/v7 아키텍처 이미지 빌드 및
       - name: Docker Build
-        run: docker buildx build --platform linux/amd64,linux/arm64 -t ${{ env.DOCKER_IMAGE }}:latest -t ${{ env.DOCKER_IMAGE}}:${{ github.run_id }} --push .
+        run: docker buildx build --platform linux/amd64,linux/arm64 -t ${{ env.DOCKER_IMAGE }}:latest -t ${{ env.DOCKER_IMAGE }}:${{ github.run_id }} --push .

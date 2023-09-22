@@ -1,14 +1,8 @@
-import { REST, Routes, SlashCommandBuilder } from 'discord.js';
+import { REST, Routes } from 'discord.js';
 
-import { Command } from './resources/command.constraints';
+import { pingCommandBuilder } from './interactions/ping';
 
-const commands = [
-  new SlashCommandBuilder()
-    .setName(Command.PING)
-    .setNameLocalization('ko', '핑')
-    .setDescription('Replies with pong!')
-    .setDescriptionLocalization('ko', '퐁 하고 답해줍니다!'),
-];
+const commands = [pingCommandBuilder];
 
 export const registerCommands = (token: string, clientId: string) => {
   const rest = new REST().setToken(token);
