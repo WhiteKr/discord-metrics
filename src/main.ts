@@ -2,8 +2,8 @@ import { Client, GatewayIntentBits } from 'discord.js';
 import dotenv from 'dotenv';
 
 import { handlePingInteraction } from './interactions/ping';
-import { registerCommands } from './register.command';
-import { Command } from './resources/command.constraints';
+import { registerCommands } from './register-command';
+import { Command } from './resources/command-constraints';
 
 dotenv.config();
 

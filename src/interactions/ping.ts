@@ -1,6 +1,6 @@
 import { ChatInputCommandInteraction, SlashCommandBuilder } from 'discord.js';
 
-import { Command } from '@src/resources/command.constraints';
+import { Command } from '@src/resources/command-constraints';
 
 export const pingCommandBuilder = new SlashCommandBuilder()
   .setName(Command.PING)
@@ -11,9 +11,9 @@ export const pingCommandBuilder = new SlashCommandBuilder()
     builder
       .setRequired(false)
       .setName('ephemeral')
-      .setDescription('Make the response ephemeral. true by default')
+      .setDescription('Make the response ephemeral. True by default')
       .setNameLocalization('ko', '비공개')
-      .setDescriptionLocalization('ko', '응답이 나에게만 보일지 여부를 설정합니다. 기본값 true'),
+      .setDescriptionLocalization('ko', '응답이 나에게만 보일지 여부를 설정합니다. 기본 True'),
   );
 
 export const handlePingInteraction = (interaction: ChatInputCommandInteraction) => {
