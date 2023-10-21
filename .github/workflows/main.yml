@@ -3,8 +3,7 @@ on:
     branches: [main]
 
 env:
-  DOCKER_NAME: metrics
-  DOCKER_IMAGE: ghcr.io/whitekr/metrics
+  DOCKER_IMAGE: ghcr.io/whitekr/discord-metrics
 
 jobs:
   build-and-push:
